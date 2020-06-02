@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>お問い合わせ</title>
+  </head>
+  <body>
+    <h1>問い合わせ一覧</h1>
+
+    <h2>検索</h2>
+    <form action="./top.html">
+      お名前(あいまい検索): <input><br>
+      問い合わせ日時: <input type="date"> ~ <input type="date"><br>
+      返信有無: <input type="checkbox" name="reply_flg[]">未送信 <input type="checkbox" name="reply_flg[]">返信済み<br>
+      <button>検索する</button>
+    </form>
+
+    <table border="1">
+      <thead>
+        <tr>
+          <th>問い合わせ日時 ↑ <a href="top.html">↓</a></th>
+          <th>お名前 <a href="top.html">↑</a> <a href="top.html">↓</a></th>
+          <th>返信有無</th>
+          <th>問い合わせ本文（最初のｎ文字）</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>2020/05/25 11:00:00</td>
+          <td>山田太郎</td>
+          <td></td>
+          <td><a href="./inquiry_detail.html">詳細</a></td>
+        </tr>
+        <tr>
+          <td>2020/05/24 11:00:00</td>
+          <td>山田花子</td>
+          <td>返信済み</td>
+          <td><a href="./inquiry_detail.html">詳細</a></td>
+        </tr>
+        <tr>
+          <td>2020/05/24 10:00:00</td>
+          <td>山田太郎</td>
+          <td>返信済み</td>
+          <td><a href="./inquiry_detail.html">詳細</a></td>
+        </tr>
+        <tr>
+          <td>2020/05/23 23:00:00</td>
+          <td>山田花子</td>
+          <td></td>
+          <td><a href="./inquiry_detail.html">詳細</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
